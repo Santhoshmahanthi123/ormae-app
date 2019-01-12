@@ -1,0 +1,12 @@
+{
+  "name": "ormae-app",
+  "version": "1.0.0",
+  "description": "Ormae-application to check employees loan with 5% interest for flat 100000 loan it gives how much amount to be paid including with the interest.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "santhosh kumar",
+  "license": "ISC"
+  
+}
