@@ -1,5 +1,6 @@
 This is a simple application developed using nodejs,expressjs as a platform and mongoDb as a database
 which will give an understanding of the total amount to be paid by the employee of the company along with 5% interest on a flat loan of at most 100000.
+   
  Steps to run the application
  1. clone the repository using $git clone 'repo name'
  2. Install the dependencies using npm install
