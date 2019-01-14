@@ -8,4 +8,4 @@ which will give an understanding of the total amount to be paid by the employee 
  4. Now run the application using $npm start or $node app.js commands.
 
  Give your estimated loan amount in the form provided and it will show you how much total amount to be paid after one year including the interest of 5%. 
- #installation 
+ # installation 
