@@ -29,16 +29,10 @@ app.post('/loan',loancal,(req,res)=>{
     });
     loan
     .save()
-    res.redirect('/check')
     .then(result => {
-        console.log(result);
+        res.redirect('/check')
+        console.log(result)
         console.log(total)
-        res.redirect(200).json({
-            message : "loan created",
-            createdFood : loan,
-         
-        });
-    
     })
     .catch(err => {
         console.log(err);
