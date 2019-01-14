@@ -4,7 +4,7 @@ require('dotenv').config();
 const bodyParser = require("body-parser");
 const mongoose = require('mongoose');
 const Loan = require('./model/loan')
-const port = process.env.PORT | 3000;
+const port = process.env.PORT || 3000;
 const DBURL=process.env.DBURL;
 console.log(DBURL)
 app.set("view engine","ejs");
