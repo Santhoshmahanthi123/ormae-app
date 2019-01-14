@@ -1,13 +1,16 @@
 const express = require('express');
 const app = express();
+require('dotenv').config();
 const bodyParser = require("body-parser");
 const mongoose = require('mongoose');
 const Loan = require('./model/loan')
 const port = process.env.PORT | 3000;
+const DBURL=process.env.DBURL;
+console.log(DBURL)
 app.set("view engine","ejs");
 const loancal = require('./middleware/loancal');
 app.use(bodyParser.urlencoded({extended : true}));
-mongoose.connect("mongodb://localhost:/ormae-loans", { useNewUrlParser: true });
+mongoose.connect(DBURL, { useNewUrlParser: true });
 
 app.get('/',(req,res)=>{
     res.render('index');
@@ -48,7 +51,7 @@ app.post('/check',(req,res)=>{
     .exec()
     .then(result => {
         console.log(result); 
-        res.send(result);
+        res.render('display',{amount:result[0].totalAmountToBePaid})
     })
     .catch(err => {
         console.log(err);
