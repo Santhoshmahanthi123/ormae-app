@@ -34,8 +34,8 @@ app.post('/loan',loancal,(req,res)=>{
     .save()
     .then(result => {
         res.redirect('/check')
-        console.log(result)
         console.log(total)
+        console.log(result)
     })
     .catch(err => {
         console.log(err);
