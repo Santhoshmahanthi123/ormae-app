@@ -12,3 +12,14 @@ Give your estimated loan amount in the form provided and it will show you how mu
  # run application
  3. $npm start or $nodemon or $node app.js
  
+# instructions to run this application using docker file
+
+# creating a docker image 
+1.Create a docker image using $docker build -t ormae-app . (please don't forget the period (.) after the command)
+# Creating a docker container 
+1. create a docker container from the docker image using $docker run -d -p 3000:3000 ormae-app
+
+# running the docker container
+1. run the docker container using $docker run -it ormae-app
+
+
